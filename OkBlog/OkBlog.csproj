@@ -1,0 +1,315 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Panel\**" />
+    <Compile Remove="wwwroot\css\bootstrap\**" />
+    <Compile Remove="wwwroot\css\jquery-validation\**" />
+    <Compile Remove="wwwroot\css\jquery\**" />
+    <Content Remove="Views\Panel\**" />
+    <Content Remove="wwwroot\css\bootstrap\**" />
+    <Content Remove="wwwroot\css\jquery-validation\**" />
+    <Content Remove="wwwroot\css\jquery\**" />
+    <EmbeddedResource Remove="Views\Panel\**" />
+    <EmbeddedResource Remove="wwwroot\css\bootstrap\**" />
+    <EmbeddedResource Remove="wwwroot\css\jquery-validation\**" />
+    <EmbeddedResource Remove="wwwroot\css\jquery\**" />
+    <None Remove="Views\Panel\**" />
+    <None Remove="wwwroot\css\bootstrap\**" />
+    <None Remove="wwwroot\css\jquery-validation\**" />
+    <None Remove="wwwroot\css\jquery\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\Lenovo\.nuget\packages\bootstrap\5.1.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Comments\Edit.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.bowerrc" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.editorconfig" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.gitattributes" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.github\FUNDING.yml" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.github\ISSUE_TEMPLATE.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.gitignore" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.jshintrc" />
+    <None Include="wwwroot\lib\Trumbowyg-main\.npmignore" />
+    <None Include="wwwroot\lib\Trumbowyg-main\BACKERS.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\CONTRIBUTORS.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\.gitignore" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\.jshintrc" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\demos\js\highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\demos\js\loader.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\demos\js\runExampleCode.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\font\panton.woff2" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\gulpfile.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\beer.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\globe.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\introduction-customizable.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\introduction-html.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\introduction-lightweight.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\logo-doc.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\img\logo.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\js\main.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\js\vendor\highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\js\vendor\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\main.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_base.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_buttons.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_documentation.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_donate.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_font.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_footer.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_get-started.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_header.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_highlightjs-github.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_introduction.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_languages.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_normalize.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_plugins-packages.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_section.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\scss\_variables.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\docs\yarn.lock" />
+    <None Include="wwwroot\lib\Trumbowyg-main\gulpfile.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\LICENSE" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\base64\trumbowyg.base64.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\base64\ui\icons\base64.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\cleanpaste\trumbowyg.cleanpaste.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\trumbowyg.colors.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\ui\icons\back-color.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\ui\icons\fore-color.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\colors\ui\sass\trumbowyg.colors.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\emoji\trumbowyg.emoji.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\emoji\ui\icons\emoji.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\emoji\ui\sass\trumbowyg.emoji.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\fontfamily\trumbowyg.fontfamily.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\fontsize\trumbowyg.fontsize.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\fontsize\ui\icons\fontsize.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\giphy\trumbowyg.giphy.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\giphy\ui\icons\giphy.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\giphy\ui\sass\trumbowyg.giphy.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\highlight\trumbowyg.highlight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\highlight\ui\icons\highlight.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\highlight\ui\sass\trumbowyg.highlight.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\history\trumbowyg.history.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\indent\trumbowyg.indent.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\indent\ui\icons\indent.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\indent\ui\icons\outdent.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\insertaudio\trumbowyg.insertaudio.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\insertaudio\ui\icons\insert-audio.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\lineheight\trumbowyg.lineheight.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\lineheight\ui\icons\lineheight.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mathml\trumbowyg.mathml.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mathml\ui\icons\mathml.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mathml\ui\sass\trumbowyg.mathml.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mention\trumbowyg.mention.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mention\ui\icons\mention.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\mention\ui\sass\trumbowyg.mention.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\noembed\trumbowyg.noembed.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\noembed\ui\icons\noembed.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\pasteembed\trumbowyg.pasteembed.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\pasteimage\trumbowyg.pasteimage.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\preformatted\trumbowyg.preformatted.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\preformatted\ui\icons\preformatted.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\resizimg\trumbowyg.resizimg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\ruby\trumbowyg.ruby.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\ruby\ui\icons\ruby.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\specialchars\trumbowyg.specialchars.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\specialchars\ui\icons\special-chars.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\specialchars\ui\sass\trumbowyg.specialchars.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\trumbowyg.table.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\col-delete.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\col-left.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\col-right.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\row-above.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\row-below.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\row-delete.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table-delete.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\icons\table.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\table\ui\sass\trumbowyg.table.scss" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\template\trumbowyg.template.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\upload\trumbowyg.upload.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\plugins\upload\ui\icons\upload.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\README.md" />
+    <None Include="wwwroot\lib\Trumbowyg-main\sponsors\avot.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ar.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\bg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\bn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\by.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ca.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\cs.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\da.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\de.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\el.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\en.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\es.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\es_ar.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\et.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\fa.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\fi.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\fr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\he.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\hr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\hu.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\id.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\it.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ja.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ko.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\lt.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\mn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\my.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\nl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\no_nb.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ph.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\pl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\pt.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\pt_br.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ro.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\rs.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\rs_latin.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ru.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sk.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sl.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sq.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\sv.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\th.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\tr.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\ua.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\vi.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\zh_cn.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\langs\zh_tw.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\trumbowyg.js" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\blockquote.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\bold.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\close.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\create-link.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\del.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\em.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\fullscreen.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h1.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h2.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h3.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h4.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h5.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\h6.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\horizontal-rule.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\insert-image.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\italic.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-center.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-full.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-left.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\justify-right.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\link.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\ordered-list.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\p.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\redo.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\removeformat.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\strikethrough.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\strong.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\subscript.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\superscript.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\underline.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\undo.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\unlink.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\unordered-list.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\icons\view-html.svg" />
+    <None Include="wwwroot\lib\Trumbowyg-main\src\ui\sass\trumbowyg.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\content\blog\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="bootstrap" Version="5.3.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+    <PackageReference Include="NLog" Version="4.7.15" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.14.0" />
+  </ItemGroup>
+
+</Project>

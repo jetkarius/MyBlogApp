@@ -1,0 +1,62 @@
+﻿@model CreatePostViewModel
+@{
+
+}
+
+<link href="~/lib/Trumbowyg-main/dist/ui/trumbowyg.min.css" rel="stylesheet"/>
+
+<div class="container-page">
+	<h2 class="title-margin">Редактирование статьи</h2>
+
+	<form asp-controller="EditPost" asp-action="Upsert" method="post">
+		<input asp-for="Id" type="hidden" />
+		<table>		
+			@for (int i = 0; i < Model.Tags.Count; i++)
+			{
+				if(i % 3 == 0)
+				{
+					@:<tr></tr>
+				}
+				<td>
+					@Html.CheckBoxFor(model => model.Tags[i].IsSelected)
+					<lable class="tag-margin">@Model.Tags[i].Name</lable>
+					@Html.HiddenFor(model => model.Tags[i].Id)
+				</td>
+			}
+		</table>
+		<hr>
+		<div>
+			<label class="title-size">Заголовок</label>
+			<input class="form-control" style="margin: 0 0 10px 0" asp-for="Title" />
+		</div>
+		<div>
+			<label class="title-size">Контент</label>
+			<div class="color" style="margin: 0 0 10px 0">
+				<textarea class="form-control" id="editor" rows="10" value="" asp-for="Body" ></textarea>
+			</div>
+		</div>
+		<div>
+			<label class="title-size" >Категория</label>
+			<select class="form-control" asp-for="Category">
+				<option value="Programming">Programming</option>
+				<option value="Technology">Technology</option>
+				<option value="Travel">Travel</option>
+				<option value="Music">Music</option>
+			</select>
+		</div>
+		<br />
+		<input class="btn btn-sm btn-primary" type="submit" value="Сохранить изменения" />
+	</form>
+	<p>
+		<br />
+		<a asp-controller="Posts" asp-action="Index">Вернуться к списку всех статей</a>
+	</p>
+</div>
+
+@section scripts {
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="~/lib/Trumbowyg-main/dist/trumbowyg.min.js"></script>
+	<script>
+		$('#editor').trumbowyg();
+	</script>
+}

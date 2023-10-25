@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PostViewModel>
+
+<div class="container-page">
+	<h2 class="title-margin">Все статьи</h2>
+
+	<p>
+		<a class="add-user" asp-action="Create">Добавить статью</a>
+	</p>
+
+	<table class="table table-striped">
+		<tr><th>Название</th><th>Теги</th><th>Категория</th><th>Автор</th></tr>
+		<tbody>
+		@if (Model.Count() == 0)
+		{
+			<tr>
+				<td colspan="3" style="color:red">
+					No Match Any Post
+				</td>
+			</tr>
+		}
+		else
+		{
+			@foreach (var post in Model)
+			{
+				<tr>
+					<td>
+						<a asp-controller="Posts" asp-action="Post" asp-route-id="@post.Id">
+							@post.Title
+						</a>
+					</td>
+					<td>
+						@for (int i = 0; i < @post.Tags.Count; i++)
+						{
+							if (@post.Tags[i].IsSelected)
+							{
+								<span class="badge bg-secondary text-white">@post.Tags[i].Name</span>
+							}	
+						}
+					</td>
+					<td>
+						<label>
+							@post.Category
+						</label>
+					</td>
+					<td>
+						<label>
+							@post.Author
+						</label>
+					</td>
+					<td>
+						<form>
+							<a class="btn btn-sm btn-danger float-right btn-mrg" asp-action="Remove" asp-route-id="@post.Id">Удалить</a>
+							<a class="btn btn-sm btn-primary float-right btn-mrg" asp-action="Edit" asp-route-id="@post.Id">Редактировать</a>
+						</form>
+					</td>
+				</tr>			
+			}
+		}
+		</tbody>
+	</table>
+</div>

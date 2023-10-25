@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Tag>
+@{
+	ViewBag.Title = "Список тегов";
+}
+
+<div class="container-page">
+	<h2 class="title-margin">Все теги</h2>
+
+	<p>
+		<a class="add-user" asp-action="Create">Добавить тег</a>
+	</p>
+
+	<table class="table table-striped">
+		<tr><th>Название</th></tr>
+		<tbody>
+		@if (Model.Count() == 0)
+		{
+			<tr>
+				<td colspan="3" style="color:red">
+					No Tags Created
+				</td>
+			</tr>
+		}
+		else
+		{
+			@foreach (var tag in Model)
+			{
+				<tr>
+					<td>@tag.Name</td>
+					<td>
+						<form>
+							<button class="btn btn-sm btn-danger float-right btn-mrg" asp-controller="Tags" asp-action="Delete" asp-route-id="@tag.Id">Удалить</button>
+							<a class="btn btn-sm btn-primary float-right btn-mrg" asp-action="Edit" asp-route-id="@tag.Id">Редактировать</a>
+						</form>
+					</td>
+				</tr>				
+			}
+		}
+		</tbody>
+	</table>
+</div>
+
+

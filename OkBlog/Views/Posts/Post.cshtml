@@ -1,0 +1,90 @@
+﻿@model PostViewModel
+
+@{
+
+}
+
+<div class="container">
+	<h2 style="margin: 30px 0">@Model.Title</h2>
+
+	<div>
+		@for (int i = 0; i < Model.Tags.Count; i++)
+		{
+			if (Model.Tags[i].IsSelected)
+			{
+				<span class="badge bg-primary text-white">@Model.Tags[i].Name</span>
+			}	
+		}
+	</div>
+	<br />
+	
+	@if(@Model.Author == @Model.CurrentUserName || @User.IsInRole("Admin") || @User.IsInRole("Moderator"))
+	{
+		<p>
+			<a asp-controller="EditPost" asp-action="Edit" asp-route-id="@Model.Id">Редактировать статью</a>
+		</p>
+	}	
+	
+	<div class="post no-shadow">
+		@if(!String.IsNullOrEmpty(Model.Image))
+		{
+			var image_path = $"/Image/{Model.Image}";
+			<img src="@image_path" class="post-img" />
+		}
+	</div>
+
+
+	<div class="post-body color">
+		@Html.Raw(Model.Body)
+	</div>
+
+	<div>
+		<br />
+		<span class="badge bg-success text-white float-right">@Model.Author</span>
+	</div>
+
+	<br />
+	<hr  />
+
+	<div>
+		<div>
+			<p class="float-right" style="margin: -1px 5px">Количество комментариев: @Model.MainComments.Count</p>
+			<h6>Комментарии к статье</h6>
+		</div>
+
+
+		@foreach (var c in Model.MainComments)
+		{
+			<div class="grid comment-body color" style="margin: 5px 0">
+				<div style="margin: 15px 15px">
+					@Html.Raw(c.Message)
+				</div>
+				<div>
+					@if (c.Author == Model.CurrentUserName || @User.IsInRole("Admin") || @User.IsInRole("Moderator"))
+					{
+						await Html.RenderPartialAsync("_EditMainComment", new EditCommentViewModel { PostId = Model.Id, MainCommentId = c.Id, Message = c.Message, Author = c.Author});
+					}
+				</div>
+				<div style="margin: 0 10px">
+					<span class="date-comment">- @c.Created -</span>
+				</div>
+				<div>
+					<span class="badge bg-success text-white" style="margin: 0 0 0 69px">@c.Author</span>
+				</div>
+			</div>
+		}
+		@if (User.Identity.IsAuthenticated)
+		{
+			<br/>
+			<hr/>
+
+			<h6>Оставте ваш комментарий</h6>
+
+			await Html.RenderPartialAsync("_MainComment", new CommentViewModel { PostId = Model.Id, MainCommentId = 0 });
+		}
+
+	</div>
+</div>
+
+
+

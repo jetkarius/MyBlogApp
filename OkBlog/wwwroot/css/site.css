@@ -1,0 +1,160 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #9ee3f2;
+    position: relative;
+    padding-bottom: 70px;
+    min-height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+nav {
+    background-color: #142127;
+    height: 65px;
+    width: 100%;
+    text-align: center;
+}
+
+    nav a {
+        display: inline-block;
+        padding: 15px;
+    }
+
+.footer {
+    text-align: center;
+    background-color: #142127;
+    color: #fff;
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-img {
+    position: relative;
+    height: 500px;
+    background-image: url('../content/static/main-img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    text-shadow: 0 0 8px black
+}
+
+.title-posts {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    text-shadow: 0 0 18px black
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.post {
+    margin: 5px 0;
+    position: relative;
+    display: flex;
+    height: 400px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.post-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-body {
+    margin: 0 0 0;
+    padding: 20px 5px;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+
+.btn-mrg {
+    margin: 0 5px;
+}
+
+.container-page {
+    margin: 50px 250px;
+}
+
+.title-margin {
+    margin: 30px 0;
+}
+
+.comment-body {
+    border: 1px solid #EDF0E7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.date-comment {
+    font-size: 14px;
+    color: gray;
+}
+
+.logout-container {
+    border: 1px solid #EDF0E7;
+    border-radius: 5px;
+    padding: 20px 20px 10px 20px;
+    display: flex;
+}
+
+.right {
+    float: right;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 210px;
+    grid-template-rows: auto 26px;
+
+    grid-column-gap: 40px;
+    grid-row-gap: 5px;
+}
+
+.color {
+    background: #CCF0F6;
+}
+
+.title-size {
+    font-size: 18px;
+}
+
+.tag-margin {
+    margin-right: 30px;
+}
